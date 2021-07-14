@@ -1,0 +1,201 @@
+body {
+    width:100%;
+    margin: 0;
+    background-image: linear-gradient(rgba(2,4,7,0.5),rgba(2,4,7,0.5)), url("../images/kerala.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+header {
+    background-color: transparent;
+    text-align: center;
+    padding:80px 0px;
+}
+
+.container {
+    margin: 0 auto;
+    padding:0 20px;
+    max-width: 900px;
+}
+
+h1{
+    font-weight: bolder;
+    color:white;
+    margin: 0px 0px 15px 0px;
+}
+
+h2{
+    font-weight: bolder;
+    color:lightgrey;
+    margin: 0px 0px 15px 0px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: chartreuse;
+    text-decoration: none;
+    padding:10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(94, 94, 94);
+    color: lightgreen;
+    border:1px solid white;
+}
+
+.submenu {
+    display: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+    text-align: center;
+    min-width:140px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+}
+
+.submenu a{
+    background-color: rgb(44, 44, 44);
+    color: chartreuse;
+    text-decoration: none;
+    border-radius: 5px;
+    border:1px solid rgb(94, 94, 94);
+    padding:10px 10px;
+    font-size: 10px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: rgb(94, 94, 94);
+    color: lightgreen;
+    border:1px solid white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:600px) {
+    section {
+        padding:25px 0px;
+    }
+    .btn {
+        display: block;
+        font-size:20px;
+    }
+    h1 {
+        margin:0 0 10px 0;
+        font-size:30px;
+    }
+    h2 {
+        margin:0 0 10px 0;
+        font-size: 25px;
+    }
+    .feature {
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: left;
+        text-align: center;
+        margin:0 0 10 0;
+        font-size: 30px;
+    }
+    .feature img {
+        min-width: 80px;
+        min-height:100px;
+    }
+    .foods {
+        padding:30px 0;
+    }
+    blockquote p {
+        font-size: 30px;
+        font-weight: 15px;
+    }
+    blockquote cite {
+        font-size: 25px;
+        font-style: italic;
+    }
+    footer {
+        padding:20px 0px 10px 0px;
+    }
+    footer div ul li {
+        display: block;
+        margin: 10px 0px;
+    }
+    .submenu {
+        width:50%;
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.features {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.feature {
+    display: inline-block;
+    width:40%;
+}
+
+.feature img {
+    width:25%;
+    height:150px;
+}
+
+blockquote {
+    color:chartreuse;
+    text-align:center;
+}
+
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 25px;
+    font-weight: 10px;
+}
+
+blockquote cite {
+    font-size: 15px;
+    font-style: italic;
+}
+
+blockquote cite::before {
+    content: '-';
+    margin-right: 5px;
+}
+
+footer {
+    color:white;
+    text-align: center;
+    margin:0;
+    padding: 30px 0px 10px 0px;
+}
+
+footer ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    padding:5px;
+}
+
+footer ul li a:hover {
+    background-color: rgba(2,4,7,0.5);
+    color: blue;
+}
